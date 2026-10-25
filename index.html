@@ -15,6 +15,7 @@
 /* Apresentação do desenvolvedor */
 .developer-layout{display:grid;grid-template-columns:minmax(190px,280px) minmax(0,1fr);gap:42px;align-items:start;margin-top:30px}
 .developer-photo{aspect-ratio:4/5;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#e6f3ea,#c4e4d0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--green);text-align:center;padding:24px}
+.developer-photo-image{display:block;object-fit:cover;object-position:center;padding:0;width:100%;height:auto;aspect-ratio:4/5}
 .developer-photo svg{width:88px;height:88px;opacity:.75}
 .developer-photo span{font-size:.9rem;font-weight:600}
 .developer-name{margin:0 0 4px;font-size:1.65rem;color:var(--green)}
@@ -39,10 +40,7 @@
     <div class="eyebrow" style="color:var(--mid)">Quem está por trás do ZooTeck</div>
     <h2 id="titulo-desenvolvedor">Conheça o desenvolvedor</h2>
     <div class="developer-layout">
-      <div class="developer-photo" aria-label="Espaço reservado para fotografia profissional do desenvolvedor">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>
-        <span>Fotografia do desenvolvedor</span>
-      </div>
+      <img class="developer-photo developer-photo-image" src="alan-prestes.jpg" alt="Fotografia de Alan Miranda Prestes, desenvolvedor do ZooTeck" loading="lazy" width="280" height="350">
       <div class="developer-copy">
         <h3 class="developer-name">Alan Miranda Prestes</h3>
         <p class="developer-role">Biólogo · Doutor em Zootecnia · Professor e pesquisador</p>
